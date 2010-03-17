@@ -43,7 +43,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LoginServices)
 	
 	ASIHTTPRequest *request;
 	request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:url]];
-	[request addRequestHeader:@"User-Agent" value:@"wherewasi-iPhone"];
+	//[request addRequestHeader:@"User-Agent" value:@"wherewasi-iPhone"];
 	request.shouldPresentAuthenticationDialog = TRUE;
 	//request.userInfo = userInfo;
 	[self.networkQueue addOperation:request];

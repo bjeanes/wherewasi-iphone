@@ -32,6 +32,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppDelegate)
 	}
 	
 	DLog(@"%@", [[LoginServices sharedLoginServices]apiToken]);
+	[[LocationPointsServices sharedLocationPointsServices]postLocationPoint:nil];
 }
 
 /**
@@ -94,13 +95,13 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppDelegate)
 - (void)locationDidFix:(id)sender
 {
 	// Do something
-	NSLog(@"user got a fix with core location");
+	DLog(@"user got a fix with core location");
 }
 
 - (void)locationShouldStop:(id)sender
 {
 	// Do something
-	NSLog(@"user does not want to use core location");
+	DLog(@"user does not want to use core location");
 }
 
 

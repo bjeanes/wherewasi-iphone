@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <OD2/OD2Services.h>
 
-@interface LoginServices : OD2Services <OD2ServicesContentManagement>{
+@interface LoginServices : OD2Services <OD2ServicesContentManagement> {
 	
 }
 
