@@ -30,6 +30,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppDelegate)
 													 name:ShouldStopGPSLocationFix
 												   object:nil];
 	}
+	
+	DLog(@"%@", [[LoginServices sharedLoginServices]apiToken]);
 }
 
 /**

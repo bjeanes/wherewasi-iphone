@@ -22,10 +22,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LoginServices)
 		[self downloadContentForUrl:url withObject:nil];
 	} else {
 		// Get the key from the prefs
-		apiToken = [[NSUserDefaults standardUserDefaults]valueForKey:];
+		apiToken = [[NSUserDefaults standardUserDefaults]valueForKey:APITokenUserDefaults];
 	}
 	
-	return content;
+	return apiToken;
 }
 
 - (BOOL)contentHasExpiredForUrl:(NSString *)url
@@ -43,6 +43,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LoginServices)
 	
 	ASIHTTPRequest *request;
 	request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:url]];
+	[request addRequestHeader:@"User-Agent" value:@"iPhone"];
+	request.shouldPresentAuthenticationDialog = TRUE;
 	//request.userInfo = userInfo;
 	[self.networkQueue addOperation:request];
 	

@@ -15,7 +15,6 @@
 		3A5749FD1150CEC000AEFEE4 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */; };
 		3A574A771150D4B100AEFEE4 /* MyLocationGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */; };
 		3A574AAB1150D6C800AEFEE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A574AAA1150D6C800AEFEE4 /* CoreLocation.framework */; };
-		3A574AC91150D7C600AEFEE4 /* LoginDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574AC81150D7C600AEFEE4 /* LoginDatasource.m */; };
 		3A574ACD1150D7DE00AEFEE4 /* LoginServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574ACC1150D7DE00AEFEE4 /* LoginServices.m */; };
 		3AB03AC711040F7D0027883A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB03ABA11040F7D0027883A /* MainWindow.xib */; };
 		3AB03ACB11040F7D0027883A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB03AC311040F7D0027883A /* AppDelegate.m */; };
@@ -56,8 +55,6 @@
 		3A574A751150D4B100AEFEE4 /* MyLocationGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationGetter.h; sourceTree = "<group>"; };
 		3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationGetter.m; sourceTree = "<group>"; };
 		3A574AAA1150D6C800AEFEE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		3A574AC71150D7C600AEFEE4 /* LoginDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDatasource.h; sourceTree = "<group>"; };
-		3A574AC81150D7C600AEFEE4 /* LoginDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDatasource.m; sourceTree = "<group>"; };
 		3A574ACB1150D7DE00AEFEE4 /* LoginServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginServices.h; sourceTree = "<group>"; };
 		3A574ACC1150D7DE00AEFEE4 /* LoginServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginServices.m; sourceTree = "<group>"; };
 		3AB03ABA11040F7D0027883A /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -161,8 +158,6 @@
 			children = (
 				3A574ACB1150D7DE00AEFEE4 /* LoginServices.h */,
 				3A574ACC1150D7DE00AEFEE4 /* LoginServices.m */,
-				3A574AC71150D7C600AEFEE4 /* LoginDatasource.h */,
-				3A574AC81150D7C600AEFEE4 /* LoginDatasource.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -340,7 +335,6 @@
 				3AB03ACB11040F7D0027883A /* AppDelegate.m in Sources */,
 				3AB03ADD110410E10027883A /* main.m in Sources */,
 				3A574A771150D4B100AEFEE4 /* MyLocationGetter.m in Sources */,
-				3A574AC91150D7C600AEFEE4 /* LoginDatasource.m in Sources */,
 				3A574ACD1150D7DE00AEFEE4 /* LoginServices.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,8 +359,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Source/Main/Other/App_Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Source/External/phoenix/Source/Main";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				OTHER_CFLAGS = "-DDEBUG";
 				PRODUCT_NAME = wherewasi;
 			};
 			name = Debug;
@@ -378,8 +372,8 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Source/Main/Other/App_Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Source/External/phoenix/Source/Main";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				OTHER_CFLAGS = "-DDEBUG";
 				PRODUCT_NAME = wherewasi;
 			};
 			name = Release;
