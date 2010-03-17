@@ -6,6 +6,7 @@
 @synthesize window=_window;
 @synthesize navigationController=_navigationController;
 
+SYNTHESIZE_SINGLETON_FOR_CLASS(AppDelegate)
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -14,11 +15,21 @@
     
     // Override point for customization after app launch    
 
-//	RootViewController *rootViewController = (RootViewController *)[navigationController topViewController];
-//	rootViewController.managedObjectContext = self.managedObjectContext;
-	
 	[self.window addSubview:[self.navigationController view]];
     [self.window makeKeyAndVisible];
+	
+	if (self.locationGetter.locationManager.locationServicesEnabled) {
+		// Try to see when location getter got a fix
+		[[NSNotificationCenter defaultCenter] addObserver:self 
+												 selector:@selector(locationDidFix:) 
+													 name:GPSLocationDidFix
+												   object:nil];
+		// Try to see when user does not allow core location
+		[[NSNotificationCenter defaultCenter] addObserver:self 
+												 selector:@selector(locationShouldStop:) 
+													 name:ShouldStopGPSLocationFix
+												   object:nil];
+	}
 }
 
 /**
@@ -38,6 +49,56 @@
 			abort();
         } 
     }
+}
+
+#pragma mark -
+#pragma mark Geolocation:
+
+- (MyLocationGetter *)locationGetter
+{
+	if (!_locationGetter) {
+		_locationGetter = [[MyLocationGetter alloc]init];
+		_locationGetter.alwaysOn = TRUE;
+	}
+	return _locationGetter;
+}
+
+- (CLLocation *)currentLocation
+{
+	CLLocation *current = nil;
+	
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name = %@", self.locationGetter.selectedLocation];
+	NSArray *locations = [self.locationGetter.locations filteredArrayUsingPredicate:predicate];
+	if (locations.count == 1) {
+		NSDictionary *dict = [locations objectAtIndex:0];
+		current = [dict valueForKey:@"location"];
+	}
+	
+	if (!current) {
+		// Use current location
+		if (TARGET_IPHONE_SIMULATOR) {
+			// harajuku
+			current = [[[CLLocation alloc]initWithLatitude:35.67165182 longitude:139.7016934]autorelease];
+			// tokyo city
+			// current = [[[CLLocation alloc]initWithLatitude:35.67500798914924 longitude:139.72867012023926]autorelease];
+		} else {
+			current = [self.locationGetter.locationManager location];
+		}
+	}
+	
+	return current;
+}
+
+- (void)locationDidFix:(id)sender
+{
+	// Do something
+	NSLog(@"user got a fix with core location");
+}
+
+- (void)locationShouldStop:(id)sender
+{
+	// Do something
+	NSLog(@"user does not want to use core location");
 }
 
 
@@ -130,7 +191,9 @@
 
 - (void)dealloc {
 	
-    [_managedObjectContext release];
+    [_locationGetter release];
+	
+	[_managedObjectContext release];
     [_managedObjectModel release];
     [_persistentStoreCoordinator release];
     

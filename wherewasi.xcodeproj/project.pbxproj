@@ -13,6 +13,8 @@
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		3A5749771150CB2900AEFEE4 /* libObjectiveDump2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5749741150CB1900AEFEE4 /* libObjectiveDump2.a */; };
 		3A5749FD1150CEC000AEFEE4 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */; };
+		3A574A771150D4B100AEFEE4 /* MyLocationGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */; };
+		3A574AAB1150D6C800AEFEE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A574AAA1150D6C800AEFEE4 /* CoreLocation.framework */; };
 		3AB03AC711040F7D0027883A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB03ABA11040F7D0027883A /* MainWindow.xib */; };
 		3AB03ACB11040F7D0027883A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB03AC311040F7D0027883A /* AppDelegate.m */; };
 		3AB03ADD110410E10027883A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB03ADB110410E10027883A /* main.m */; };
@@ -50,6 +52,9 @@
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3A57496C1150CB1900AEFEE4 /* ObjectiveDump2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveDump2.xcodeproj; path = ObjectiveDump2/ObjectiveDump2.xcodeproj; sourceTree = "<group>"; };
 		3A574A301150D06A00AEFEE4 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		3A574A751150D4B100AEFEE4 /* MyLocationGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationGetter.h; sourceTree = "<group>"; };
+		3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationGetter.m; sourceTree = "<group>"; };
+		3A574AAA1150D6C800AEFEE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3AB03ABA11040F7D0027883A /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		3AB03ABB11040F7D0027883A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AB03ABC11040F7D0027883A /* Database.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 				3AB03B07110412500027883A /* SystemConfiguration.framework in Frameworks */,
 				3AB03B09110412500027883A /* libz.1.2.3.dylib in Frameworks */,
 				3A5749771150CB2900AEFEE4 /* libObjectiveDump2.a in Frameworks */,
+				3A574AAB1150D6C800AEFEE4 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +118,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A574AAA1150D6C800AEFEE4 /* CoreLocation.framework */,
 				3AB03AFC110412500027883A /* AVFoundation.framework */,
 				3AB03B04110412500027883A /* Security.framework */,
 				3AB03B08110412500027883A /* libz.1.2.3.dylib */,
@@ -141,6 +148,15 @@
 				3A574A301150D06A00AEFEE4 /* SynthesizeSingleton.h */,
 			);
 			path = Gallager;
+			sourceTree = "<group>";
+		};
+		3A574A721150D29500AEFEE4 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3A574A751150D4B100AEFEE4 /* MyLocationGetter.h */,
+				3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 		3AB03AB811040F7D0027883A /* Resources */ = {
@@ -185,6 +201,7 @@
 				3AB03BDC110416720027883A /* Define.h */,
 				3AB03AC211040F7D0027883A /* AppDelegate.h */,
 				3AB03AC311040F7D0027883A /* AppDelegate.m */,
+				3A574A721150D29500AEFEE4 /* Other */,
 				3AB03AC411040F7D0027883A /* Models */,
 				3AB03AC511040F7D0027883A /* Services */,
 				3AB03AC611040F7D0027883A /* Views */,
@@ -306,6 +323,7 @@
 				3A5749FD1150CEC000AEFEE4 /* Database.xcdatamodeld in Sources */,
 				3AB03ACB11040F7D0027883A /* AppDelegate.m in Sources */,
 				3AB03ADD110410E10027883A /* main.m in Sources */,
+				3A574A771150D4B100AEFEE4 /* MyLocationGetter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

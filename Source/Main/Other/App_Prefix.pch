@@ -10,5 +10,6 @@
     #import <UIKit/UIKit.h>
     #import <CoreData/CoreData.h>
 	#import "SynthesizeSingleton.h"
+	#import "MyLocationGetter.h"
 	#import "Define.h"
 #endif
