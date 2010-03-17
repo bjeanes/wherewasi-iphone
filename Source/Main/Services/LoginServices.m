@@ -43,7 +43,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LoginServices)
 	
 	ASIHTTPRequest *request;
 	request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:url]];
-	[request addRequestHeader:@"User-Agent" value:@"iPhone"];
+	[request addRequestHeader:@"User-Agent" value:@"wherewasi-iPhone"];
 	request.shouldPresentAuthenticationDialog = TRUE;
 	//request.userInfo = userInfo;
 	[self.networkQueue addOperation:request];
@@ -61,6 +61,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LoginServices)
 	if (!error) {
 		NSString *response = [request responseString];
 		[[NSUserDefaults standardUserDefaults]setValue:response forKey:APITokenUserDefaults];
+		[[NSUserDefaults standardUserDefaults]synchronize];
 		// notifie that it is now possible to use credentials
 		[[NSNotificationCenter defaultCenter] postNotificationName:LoginShouldReloadContentNotification object:self];
 	}

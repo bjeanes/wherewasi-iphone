@@ -162,11 +162,11 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
-		3A574AC51150D71000AEFEE4 /* Login */ = {
+		3A574BFF1150F5C300AEFEE4 /* Points */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Login;
+			name = Points;
 			sourceTree = "<group>";
 		};
 		3AB03AB811040F7D0027883A /* Resources */ = {
@@ -230,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				3A574AC41150D70B00AEFEE4 /* Login */,
+				3A574BFF1150F5C300AEFEE4 /* Points */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -237,7 +238,6 @@
 		3AB03AC611040F7D0027883A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3A574AC51150D71000AEFEE4 /* Login */,
 			);
 			path = Views;
 			sourceTree = "<group>";
