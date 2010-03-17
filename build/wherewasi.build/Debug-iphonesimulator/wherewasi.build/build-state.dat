@@ -1,18 +1,12 @@
 Twherewasi
 v7
 r0
-t290510545.128055
+t290516020.759908
 cCheck dependencies
-cProcessInfoPlistFile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/Info.plist /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Info.plist
-cCompileXIB /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/MainWindow.xib
-cProcessPCH /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch.gch Source/Main/Other/App_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cDataModelVersionCompile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/Database.momd /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Database.xcdatamodeld
-cCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/AppDelegate.o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/main.o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/MyLocationGetter.o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/MyLocationGetter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/wherewasi normal i386
-cGenerateDSYMFile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app.dSYM /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/wherewasi
-cTouch /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app
+cProcessInfoPlistFile /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Info.plist /Users/aspeed/Projects/InternalProject/wherewasi/Resources/Info.plist
+cCompileXIB /Users/aspeed/Projects/InternalProject/wherewasi/Resources/MainWindow.xib
+cProcessPCH /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-egasktceklllauazyzqoqhihodnt/App_Prefix.pch.gch Source/Main/Other/App_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cDataModelVersionCompile /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Database.momd /Users/aspeed/Projects/InternalProject/wherewasi/Resources/Database.xcdatamodeld
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk
 c000000004A42E5F300000000000000EE
@@ -146,9 +140,9 @@ s6659
 i"AppDelegate.h"
 
 N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Define.h
-c000000004BA09F2F0000000000000056
-t1268817711
-s86
+c000000004BA0B02800000000000001BF
+t1268822056
+s447
 
 N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/MyLocationGetter.h
 c000000004B0B2AD4000000000000031D
@@ -181,6 +175,31 @@ c000000004B53E1A700000000000000E5
 t1263788455
 s229
 i<UIKit/UIKit.h>
+
+N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginDatasource.h
+c000000004BA0A04600000000000000E4
+t1268817990
+s228
+i<Foundation/Foundation.h>
+
+N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginDatasource.m
+c000000004BA0A04600000000000000D3
+t1268817990
+s211
+i"LoginDatasource.h"
+
+N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h
+c000000004BA0A958000000000000017B
+t1268820312
+s379
+i<Foundation/Foundation.h>
+i<OD2/OD2Services.h>
+
+N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m
+c000000004BA0B0CD00000000000007E7
+t1268822221
+s2023
+i"LoginServices.h"
 
 N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app
 t1268817745
@@ -215,21 +234,175 @@ t1268817745
 s298440
 
 N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/AppDelegate.o
-t1268817744
+t1268822231
 s56936
 
+N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginDatasource.o
+t1268822231
+s4964
+
+N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginServices.o
+t2
+s0
+
 N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/MyLocationGetter.o
-t1268817745
+t1268822231
 s20120
 
 N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/main.o
-t1268817744
+t1268822231
 s6012
 
 N/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/wherewasi.LinkFileList
-c000000004BA09E8400000000000001C0
-t1268817540
-s448
+c000000004BA0B0D600000000000002F2
+t1268822230
+s754
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Resources/Database.xcdatamodeld
+c000000004BA097470000000000000088
+t1268815687
+s136
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Resources/Info.plist
+c000000004B53A9C2000000000000038D
+t1263774146
+s909
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Resources/MainWindow.xib
+c000000004B53DBC3000000000000528D
+t1263786947
+s21133
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/External/ObjectiveDump2/build/Debug-iphonesimulator/libObjectiveDump2.a
+c000000004BA0B4B300000000000A72E8
+t1268823219
+s684776
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/AppDelegate.h
+c000000004BA09EEC000000000000042A
+t1268817644
+s1066
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/AppDelegate.m
+c000000004BA09ED70000000000001A03
+t1268817623
+s6659
+i"AppDelegate.h"
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Define.h
+c000000004BA0B02800000000000001BF
+t1268822056
+s447
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/MyLocationGetter.h
+c000000004B0B2AD4000000000000031D
+t1259023060
+s797
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/MyLocationGetter.m
+c000000004BA09F170000000000000DD6
+t1268817687
+s3542
+i"MyLocationGetter.h"
+i<CoreLocation/CoreLocation.h>
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Other/App_Prefix.pch
+c000000004BA09E970000000000000158
+t1268817559
+s344
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+i"SynthesizeSingleton.h"
+i"MyLocationGetter.h"
+i"Define.h"
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Other/main.m
+c000000004B53E1A700000000000000E5
+t1263788455
+s229
+i<UIKit/UIKit.h>
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Services/LoginDatasource.h
+c000000004BA0A04600000000000000E4
+t1268817990
+s228
+i<Foundation/Foundation.h>
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Services/LoginDatasource.m
+c000000004BA0A04600000000000000D3
+t1268817990
+s211
+i"LoginDatasource.h"
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Services/LoginServices.h
+c000000004BA0A958000000000000017B
+t1268820312
+s379
+i<Foundation/Foundation.h>
+i<OD2/OD2Services.h>
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Services/LoginServices.m
+c000000004BA0B0CD00000000000007E7
+t1268822221
+s2023
+i"LoginServices.h"
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app
+t2
+s0
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app.dSYM
+t2
+s0
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Database.momd
+t1268823220
+s136
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Info.plist
+t1268823219
+s599
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/MainWindow.nib
+t1268823219
+s1655
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/PkgInfo
+t1268823219
+s8
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/wherewasi
+t2
+s0
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginDatasource.o
+t2
+s0
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginServices.o
+t2
+s0
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/MyLocationGetter.o
+t2
+s0
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/wherewasi.LinkFileList
+c000000004BA0B4B300000000000002CF
+t1268823219
+s719
 
 N/var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-aleiglvaikekzbganfbthkvgnqea/App_Prefix.pch.gch
 t2
@@ -240,8 +413,12 @@ t1268815399
 s13801680
 
 N/var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch.gch
-t1268817744
-s13875696
+t1268822231
+s13879792
+
+N/var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-egasktceklllauazyzqoqhihodnt/App_Prefix.pch.gch
+t2
+s0
 
 N/var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-fmjrrnpidchdstdjqfcgypufkamy/App_Prefix.pch.gch
 t2
@@ -253,11 +430,11 @@ s13875696
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies290510543#290510543#0(0"0(0#1#0"4300911832#0"0#
+lSLF07#2@18"Check dependencies290516019#290516019#0(0"0(0#1#0"4300911832#0"0#
 
 CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/AppDelegate.o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s290510544.888898
-e290510544.999244
+s290515031.196577
+e290515031.312381
 r1
 xCompileC
 xbuild/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/AppDelegate.o
@@ -266,11 +443,90 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/AppDelegate.m290510544#290510544#0(0"0(0#0#81"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/AppDelegate.m4300911832#2262"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -include /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/AppDelegate.m -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/AppDelegate.o0#
+lSLF07#2@89"Compile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/AppDelegate.m290515031#290515031#0(0"0(0#0#81"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/AppDelegate.m4300911832#2262"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -include /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/AppDelegate.m -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/AppDelegate.o0#
+
+CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/AppDelegate.o /Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginDatasource.o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginDatasource.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s290515031.312491
+e290515031.369874
+r1
+xCompileC
+xbuild/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginDatasource.o
+x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginDatasource.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@102"Compile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginDatasource.m290515031#290515031#0(0"0(0#0#94"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginDatasource.m4300911832#2279"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -include /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginDatasource.m -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginDatasource.o0#
+
+CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginDatasource.o /Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Services/LoginDatasource.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginServices.o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s290515031.336348
+e290515031.389731
+r0
+xCompileC
+xbuild/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginServices.o
+x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:9:
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h:10:28: error: OD2/OD2Services.h: No such file or directory
+oIn file included from /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:9:
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h:12: error: cannot find interface declaration for 'OD2Services', superclass of 'LoginServices'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h:12: error: cannot find protocol declaration for 'OD2ServicesContentManagement'
+occ1obj: warnings being treated as errors
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '+[LoginServices sharedLoginServices]':
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: warning: 'LoginServices' may not respond to '+alloc'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: warning: (Messages without a matching method signature
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: warning: will be assumed to return 'id' and accept
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: warning: '...' as arguments.)
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '+[LoginServices allocWithZone:]':
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: error: no super class declared in @interface for 'LoginServices'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices apiToken]':
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:21: warning: 'LoginServices' may not respond to '-contentHasExpiredForUrl:'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:22: warning: 'LoginServices' may not respond to '-downloadContentForUrl:withObject:'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:25: error: expected expression before ']' token
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:28: error: 'content' undeclared (first use in this function)
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:28: error: (Each undeclared identifier is reported only once
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:28: error: for each function it appears in.)
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:29: warning: control reaches end of non-void function
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices contentHasExpiredForUrl:]':
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:33: warning: 'LoginServices' may not respond to '-lastFetchedDateForUrl:'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices downloadContentForUrl:withObject:]':
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:44: error: 'ASIHTTPRequest' undeclared (first use in this function)
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:44: error: 'request' undeclared (first use in this function)
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:47: error: request for member 'networkQueue' in something not a structure or union
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:49: error: request for member 'networkQueue' in something not a structure or union
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: At top level:
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:54: error: expected ')' before 'ASIHTTPRequest'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices fetchCompleted:]':
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:56: error: request for member 'url' in something not a structure or union
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:56: warning: 'LoginServices' may not respond to '-savedLastFetchedUrl:'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:60: warning: no '-responseString' method found
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:67: warning: implicit declaration of function 'DLog'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: At top level:
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:70: error: expected ')' before 'ASIHTTPRequest'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices fetchFailed:]':
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:72: error: request for member 'url' in something not a structure or union
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:72: warning: 'LoginServices' may not respond to '-savedLastFetchedUrl:'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: At top level:
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:76: error: expected ')' before 'ASINetworkQueue'
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices dealloc]':
+o/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:85: error: no super class declared in @interface for 'LoginServices'
+lSLF07#2@100"Compile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515031#290515031#0(6450"In file included from /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:9:/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h:10:28: error: OD2/OD2Services.h: No such file or directoryIn file included from /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:9:/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h:12: error: cannot find interface declaration for 'OD2Services', superclass of 'LoginServices'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h:12: error: cannot find protocol declaration for 'OD2ServicesContentManagement'cc1obj: warnings being treated as errors/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '+[LoginServices sharedLoginServices]':/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: warning: 'LoginServices' may not respond to '+alloc'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: warning: (Messages without a matching method signature/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: warning: will be assumed to return 'id' and accept/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: warning: '...' as arguments.)/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '+[LoginServices allocWithZone:]':/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:14: error: no super class declared in @interface for 'LoginServices'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices apiToken]':/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:21: warning: 'LoginServices' may not respond to '-contentHasExpiredForUrl:'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:22: warning: 'LoginServices' may not respond to '-downloadContentForUrl:withObject:'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:25: error: expected expression before ']' token/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:28: error: 'content' undeclared (first use in this function)/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:28: error: (Each undeclared identifier is reported only once/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:28: error: for each function it appears in.)/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:29: warning: control reaches end of non-void function/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices contentHasExpiredForUrl:]':/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:33: warning: 'LoginServices' may not respond to '-lastFetchedDateForUrl:'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices downloadContentForUrl:withObject:]':/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:44: error: 'ASIHTTPRequest' undeclared (first use in this function)/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:44: error: 'request' undeclared (first use in this function)/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:47: error: request for member 'networkQueue' in something not a structure or union/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:49: error: request for member 'networkQueue' in something not a structure or union/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: At top level:/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:54: error: expected ')' before 'ASIHTTPRequest'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices fetchCompleted:]':/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:56: error: request for member 'url' in something not a structure or union/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:56: warning: 'LoginServices' may not respond to '-savedLastFetchedUrl:'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:60: warning: no '-responseString' method found/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:67: warning: implicit declaration of function 'DLog'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: At top level:/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:70: error: expected ')' before 'ASIHTTPRequest'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices fetchFailed:]':/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:72: error: request for member 'url' in something not a structure or union/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:72: warning: 'LoginServices' may not respond to '-savedLastFetchedUrl:'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: At top level:/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:76: error: expected ')' before 'ASINetworkQueue'/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m: In function '-[LoginServices dealloc]':/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m:85: error: no super class declared in @interface for 'LoginServices'29(4@44"OD2/OD2Services.h: No such file or directory290515031#118#152#2(7@114"In file included from /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515031#18446744073709551615#0#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#9#0#9#0#0"0(13@140"OD2/OD2Services.h: No such file or directory in /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h290515031#18446744073709551615#0#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h290513112#10#0#10#0#0"0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h290513112#10#0#10#0#28"*: No such file or directory0(4@82"Cannot find interface declaration for 'OD2Services', superclass of 'LoginServices'290515031#388#187#2(7@114"In file included from /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515031#18446744073709551615#0#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#9#0#9#0#0"0(13@178"Cannot find interface declaration for 'OD2Services', superclass of 'LoginServices' in /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h290515031#18446744073709551615#0#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h290513112#12#0#12#0#0"0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h290513112#12#0#12#0#60"cannot find interface declaration for '*', superclass of '*'0(4@67"Cannot find protocol declaration for 'OD2ServicesContentManagement'290515031#575#172#2(7@114"In file included from /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515031#18446744073709551615#0#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#9#0#9#0#0"0(13@163"Cannot find protocol declaration for 'OD2ServicesContentManagement' in /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h290515031#18446744073709551615#0#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h290513112#12#0#12#0#0"0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.h290513112#12#0#12#0#0"0(4@43"'LoginServices' may not respond to '+alloc'290515031#934#150#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#14#0#14#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)290515031#1084#152#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#14#0#14#0#0"0(4@57"No super class declared in @interface for 'LoginServices'290515031#1652#162#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#14#0#14#0#0"0(4@62"'LoginServices' may not respond to '-contentHasExpiredForUrl:'290515031#1949#169#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#21#0#21#0#26"'*' may not respond to '*'0(4@71"'LoginServices' may not respond to '-downloadContentForUrl:withObject:'290515031#2118#178#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#22#0#22#0#26"'*' may not respond to '*'0(4@36"Expected expression before ']' token290515031#2296#141#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#25#0#25#0#19"expected * before *0(4@49"'content' undeclared (first use in this function)290515031#2437#154#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#28#0#28#0#43"'*' undeclared (first use in this function)0(4@40"Control reaches end of non-void function290515031#2883#147#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#29#0#29#0#40"control reaches end of non-void function0(4@60"'LoginServices' may not respond to '-lastFetchedDateForUrl:'290515031#3181#167#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#33#0#33#0#26"'*' may not respond to '*'0(4@56"'ASIHTTPRequest' undeclared (first use in this function)290515031#3508#161#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#44#0#44#0#43"'*' undeclared (first use in this function)0(4@49"'request' undeclared (first use in this function)290515031#3669#154#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#44#0#44#0#43"'*' undeclared (first use in this function)0(4@71"Request for member 'networkQueue' in something not a structure or union290515031#3823#176#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#47#0#47#0#0"0(4@71"Request for member 'networkQueue' in something not a structure or union290515031#3999#176#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#49#0#49#0#0"0(23@13"At top level:290515031#4175#108#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#0#0#0#0#0"0(4@36"Expected ')' before 'ASIHTTPRequest'290515031#4283#141#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#54#0#54#0#19"expected * before *0(4@62"Request for member 'url' in something not a structure or union290515031#4566#167#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#56#0#56#0#0"0(4@58"'LoginServices' may not respond to '-savedLastFetchedUrl:'290515031#4733#165#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#56#0#56#0#26"'*' may not respond to '*'0(4@33"No '-responseString' method found290515031#4898#140#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#60#0#60#0#19"no '*' method found0(4@39"Implicit declaration of function 'DLog'290515031#5038#146#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#67#0#67#0#36"implicit declaration of function '*'0(23@13"At top level:290515031#5184#108#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#0#0#0#0#0"0(4@36"Expected ')' before 'ASIHTTPRequest'290515031#5292#141#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#70#0#70#0#19"expected * before *0(4@62"Request for member 'url' in something not a structure or union290515031#5572#167#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#72#0#72#0#0"0(4@58"'LoginServices' may not respond to '-savedLastFetchedUrl:'290515031#5739#165#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#72#0#72#0#26"'*' may not respond to '*'0(23@13"At top level:290515031#5904#108#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#0#0#0#0#0"0(4@37"Expected ')' before 'ASINetworkQueue'290515031#6012#142#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#76#0#76#0#19"expected * before *0(4@57"No super class declared in @interface for 'LoginServices'290515031#6288#162#0(6@92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m290515021#85#0#85#0#0"0(0#0#92"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m4300911832#2275"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -include /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Services/LoginServices.m -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginServices.o1#
+
+CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/LoginServices.o /Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Services/LoginServices.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/MyLocationGetter.o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/MyLocationGetter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s290510544.943345
-e290510545.013996
+s290515031.247026
+e290515031.336242
 r1
 xCompileC
 xbuild/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/MyLocationGetter.o
@@ -279,11 +535,14 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@94"Compile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/MyLocationGetter.m290510544#290510545#0(0"0(0#0#86"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/MyLocationGetter.m4300911832#2272"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -include /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/MyLocationGetter.m -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/MyLocationGetter.o0#
+lSLF07#2@94"Compile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/MyLocationGetter.m290515031#290515031#0(0"0(0#0#86"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/MyLocationGetter.m4300911832#2272"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -include /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/MyLocationGetter.m -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/MyLocationGetter.o0#
+
+CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/MyLocationGetter.o /Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/MyLocationGetter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/main.o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s290510544.890219
-e290510544.943244
+s290515031.197696
+e290515031.246922
 r1
 xCompileC
 xbuild/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/main.o
@@ -292,7 +551,10 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@88"Compile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/main.m290510544#290510544#0(0"0(0#0#80"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/main.m4300911832#2254"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -include /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/main.m -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/main.o0#
+lSLF07#2@88"Compile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/main.m290515031#290515031#0(0"0(0#0#80"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/main.m4300911832#2254"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -include /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/main.m -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/main.o0#
+
+CCompileC build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/main.o /Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Other/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileXIB /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/MainWindow.xib
 s290508869.214393
@@ -301,6 +563,14 @@ r1
 xCompileXIB
 x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/MainWindow.xib
 lSLF07#2@35"CompileXIB Resources/MainWindow.xib290508869#290508869#0(0"0(0#0#80"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/MainWindow.xib4300911832#605"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/MainWindow.nib /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/MainWindow.xib0#
+
+CCompileXIB /Users/aspeed/Projects/InternalProject/wherewasi/Resources/MainWindow.xib
+s290516019.654863
+e290516020.113126
+r1
+xCompileXIB
+x/Users/aspeed/Projects/InternalProject/wherewasi/Resources/MainWindow.xib
+lSLF07#2@35"CompileXIB Resources/MainWindow.xib290516019#290516020#0(0"0(0#0#73"/Users/aspeed/Projects/InternalProject/wherewasi/Resources/MainWindow.xib4300911832#584"    cd /Users/aspeed/Projects/InternalProject/wherewasi    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/MainWindow.nib /Users/aspeed/Projects/InternalProject/wherewasi/Resources/MainWindow.xib0#
 
 CDataModelCompile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/Database.mom /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Database.xcdatamodel
 s290508188.652100
@@ -320,6 +590,15 @@ x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimul
 x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Database.xcdatamodeld
 lSLF07#2@111"DataModelVersionCompile build/Debug-iphonesimulator/wherewasi.app/Database.momd Resources/Database.xcdatamodeld290508870#290508870#0(0"0(0#0#87"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Database.xcdatamodeld4300911832#513"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.5 /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Database.xcdatamodeld /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/Database.momd0#
 
+CDataModelVersionCompile /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Database.momd /Users/aspeed/Projects/InternalProject/wherewasi/Resources/Database.xcdatamodeld
+s290516020.722817
+e290516020.759809
+r1
+xDataModelVersionCompile
+x/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Database.momd
+x/Users/aspeed/Projects/InternalProject/wherewasi/Resources/Database.xcdatamodeld
+lSLF07#2@111"DataModelVersionCompile build/Debug-iphonesimulator/wherewasi.app/Database.momd Resources/Database.xcdatamodeld290516020#290516020#0(0"0(0#0#80"/Users/aspeed/Projects/InternalProject/wherewasi/Resources/Database.xcdatamodeld4300911832#492"    cd /Users/aspeed/Projects/InternalProject/wherewasi    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.5 /Users/aspeed/Projects/InternalProject/wherewasi/Resources/Database.xcdatamodeld /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Database.momd0#
+
 CGenerateDSYMFile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app.dSYM /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/wherewasi
 s290510545.083072
 e290510545.124519
@@ -328,6 +607,9 @@ xGenerateDSYMFile
 x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app.dSYM
 x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/wherewasi
 lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/wherewasi.app.dSYM build/Debug-iphonesimulator/wherewasi.app/wherewasi290510545#290510545#0(0"0(0#0#107"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/wherewasi4300911832#502"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/wherewasi -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app.dSYM0#
+
+CGenerateDSYMFile /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app.dSYM /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/wherewasi
+r0
 
 CLd /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/wherewasi normal i386
 s290510545.014086
@@ -339,6 +621,9 @@ xnormal
 xi386
 lSLF07#2@112"Link /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/wherewasi290510545#290510545#0(0"0(0#0#0"4300911832#1368"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -L/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -filelist /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/Objects-normal/i386/wherewasi.LinkFileList -mmacosx-version-min=10.5 -ObjC -all_load -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework AVFoundation -framework CFNetwork -framework CoreFoundation -framework QuartzCore -framework Security -framework SystemConfiguration -lz.1.2.3 /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/ObjectiveDump2/build/Debug-iphonesimulator/libObjectiveDump2.a -framework CoreLocation -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/wherewasi0#
 
+CLd /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/wherewasi normal i386
+r0
+
 CProcessInfoPlistFile /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/Info.plist /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Info.plist
 s290508869.211502
 e290508869.214322
@@ -347,6 +632,15 @@ xProcessInfoPlistFile
 x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/Info.plist
 x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Info.plist
 lSLF07#2@84"Process /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Info.plist290508869#290508869#0(0"0(0#0#76"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Info.plist4300911832#654"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Resources/Info.plist -genpkginfo /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Info.plist /Users/aspeed/Projects/InternalProject/wherewasi/Resources/Info.plist
+s290516019.651774
+e290516019.654780
+r1
+xProcessInfoPlistFile
+x/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Info.plist
+x/Users/aspeed/Projects/InternalProject/wherewasi/Resources/Info.plist
+lSLF07#2@77"Process /Users/aspeed/Projects/InternalProject/wherewasi/Resources/Info.plist290516019#290516019#0(0"0(0#0#69"/Users/aspeed/Projects/InternalProject/wherewasi/Resources/Info.plist4300911832#626"    cd /Users/aspeed/Projects/InternalProject/wherewasi    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility /Users/aspeed/Projects/InternalProject/wherewasi/Resources/Info.plist -genpkginfo /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app/Info.plist0#
 
 CProcessPCH /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-aleiglvaikekzbganfbthkvgnqea/App_Prefix.pch.gch Source/Main/Other/App_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s290508577.857175
@@ -376,8 +670,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@43"Precompile Source/Main/Other/App_Prefix.pch290508198#290508199#0(0"0(0#0#88"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/App_Prefix.pch4300911832#2121"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/App_Prefix.pch -o /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-asfygweqvqfndagxhkkkjglrcicc/App_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch.gch Source/Main/Other/App_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s290510543.621065
-e290510544.888612
+s290515030.561701
+e290515031.196367
 r1
 xProcessPCH
 x/var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch.gch
@@ -386,7 +680,21 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@43"Precompile Source/Main/Other/App_Prefix.pch290510543#290510544#0(0"0(0#0#88"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/App_Prefix.pch4300911832#2121"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/App_Prefix.pch -o /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch.gch0#
+lSLF07#2@43"Precompile Source/Main/Other/App_Prefix.pch290515030#290515031#0(0"0(0#0#88"/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/App_Prefix.pch4300911832#2121"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/Source/Main/Other/App_Prefix.pch -o /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-cxnuexwpbldckigpbluhtrbqrvjn/App_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-egasktceklllauazyzqoqhihodnt/App_Prefix.pch.gch Source/Main/Other/App_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s290516020.113252
+e290516020.722483
+r0
+xProcessPCH
+x/var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-egasktceklllauazyzqoqhihodnt/App_Prefix.pch.gch
+xSource/Main/Other/App_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Other/App_Prefix.pch:12:33: error: SynthesizeSingleton.h: No such file or directory
+lSLF07#2@43"Precompile Source/Main/Other/App_Prefix.pch290516020#290516020#0(145"/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Other/App_Prefix.pch:12:33: error: SynthesizeSingleton.h: No such file or directory1(4@48"SynthesizeSingleton.h: No such file or directory290516020#0#145#0(6@81"/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Other/App_Prefix.pch290510359#12#0#12#0#28"*: No such file or directory0(0#0#81"/Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Other/App_Prefix.pch4300911832#2044"    cd /Users/aspeed/Projects/InternalProject/wherewasi    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-generated-files.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-own-target-headers.hmap -I/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-all-target-headers.hmap -iquote /Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/wherewasi-project-headers.hmap -F/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator -I/Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/include -I/Users/aspeed/Projects/InternalProject/wherewasi/Source/External/phoenix/Source/Main -I/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources/i386 -I/Users/aspeed/Projects/InternalProject/wherewasi/build/wherewasi.build/Debug-iphonesimulator/wherewasi.build/DerivedSources -c /Users/aspeed/Projects/InternalProject/wherewasi/Source/Main/Other/App_Prefix.pch -o /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-egasktceklllauazyzqoqhihodnt/App_Prefix.pch.gch1#
 
 CProcessPCH /var/folders/7x/7xx3-aQMFM8si5G5YBybgk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/App_Prefix-fmjrrnpidchdstdjqfcgypufkamy/App_Prefix.pch.gch Source/Main/Other/App_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s290508173.973334
@@ -422,4 +730,7 @@ r1
 xTouch
 x/Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app
 lSLF07#2@103"Touch /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app290510545#290510545#0(0"0(0#0#0"4300911832#376"    cd /Users/aspeed/Projects/InternalProject/wherewasi-iphone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/aspeed/Projects/InternalProject/wherewasi-iphone/build/Debug-iphonesimulator/wherewasi.app0#
+
+CTouch /Users/aspeed/Projects/InternalProject/wherewasi/build/Debug-iphonesimulator/wherewasi.app
+r0
 
