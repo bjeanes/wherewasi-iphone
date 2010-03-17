@@ -278,6 +278,7 @@
 								<string>3AB03ABF11040F7D0027883A</string>
 								<string>3A574A721150D29500AEFEE4</string>
 								<string>3AB03AC411040F7D0027883A</string>
+								<string>3A574C0B1150F76500AEFEE4</string>
 								<string>3AB03AC511040F7D0027883A</string>
 								<string>3A574AC41150D70B00AEFEE4</string>
 								<string>3A574BFF1150F5C300AEFEE4</string>
@@ -293,7 +294,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
+									<integer>22</integer>
+									<integer>18</integer>
 									<integer>5</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -335,7 +337,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>3ACE51091103E62C0031E532</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Define.h</string>
+								<string>LocationPoint.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -343,11 +345,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>3ACE510A1103E62C0031E532</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Define.h</string>
+										<string>LocationPoint.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3A574C041150F6AC00AEFEE4</string>
+										<string>3A574C1E1150F8C000AEFEE4</string>
 										<key>history</key>
 										<array>
 											<string>3AB03C2E11041A470027883A</string>
@@ -355,12 +357,15 @@
 											<string>3A574AB91150D6D400AEFEE4</string>
 											<string>3A574AF11150E1FA00AEFEE4</string>
 											<string>3A574B941150EE1D00AEFEE4</string>
-											<string>3A574BD71150F38D00AEFEE4</string>
 											<string>3A574BF81150F52500AEFEE4</string>
 											<string>3A574C001150F6AC00AEFEE4</string>
 											<string>3A574C011150F6AC00AEFEE4</string>
-											<string>3A574C021150F6AC00AEFEE4</string>
-											<string>3A574C031150F6AC00AEFEE4</string>
+											<string>3A574C141150F84200AEFEE4</string>
+											<string>3A574C151150F84200AEFEE4</string>
+											<string>3A574C161150F84200AEFEE4</string>
+											<string>3A574C171150F84200AEFEE4</string>
+											<string>3A574C1C1150F8C000AEFEE4</string>
+											<string>3A574C1D1150F8C000AEFEE4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -400,8 +405,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1141, -27}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 110 1440 768 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -455,7 +458,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1141, 196}}</string>
+										<string>{{10, 27}, {1141, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 110 1440 768 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -678,7 +683,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>3A574BFC1150F53F00AEFEE4</string>
 		<string>3A574BA61150EE3E00AEFEE4</string>
 		<string>3A574BA01150EE1E00AEFEE4</string>
 		<string>/Users/aspeed/Projects/InternalProject/wherewasi/wherewasi.xcodeproj</string>
