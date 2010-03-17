@@ -1,0 +1,3 @@
+[submodule "Source/External/ObjectiveDump2"]
+	path = Source/External/ObjectiveDump2
+	url = git@github.com:sync/ObjectiveDump2.git
