@@ -294,14 +294,16 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
+									<integer>24</integer>
+									<integer>22</integer>
+									<integer>18</integer>
 									<integer>5</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 7}, {277, 709}}</string>
+							<string>{{0, 0}, {277, 709}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -336,7 +338,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>3ACE51091103E62C0031E532</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Define.h</string>
+								<string>LocationPointsServices.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -344,11 +346,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>3ACE510A1103E62C0031E532</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Define.h</string>
+										<string>LocationPointsServices.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3A574C77115100F500AEFEE4</string>
+										<string>3A574D0811510A6700AEFEE4</string>
 										<key>history</key>
 										<array>
 											<string>3AB03C2E11041A470027883A</string>
@@ -363,11 +365,13 @@
 											<string>3A574C3A1150FED300AEFEE4</string>
 											<string>3A574C3C1150FED300AEFEE4</string>
 											<string>3A574C551150FF9A00AEFEE4</string>
-											<string>3A574C581150FF9A00AEFEE4</string>
 											<string>3A574C591150FF9A00AEFEE4</string>
-											<string>3A574C70115100E600AEFEE4</string>
-											<string>3A574C75115100F500AEFEE4</string>
-											<string>3A574C76115100F500AEFEE4</string>
+											<string>3A574CCF115104EB00AEFEE4</string>
+											<string>3A574CD7115107CD00AEFEE4</string>
+											<string>3A574CD8115107CD00AEFEE4</string>
+											<string>3A574CED115109A800AEFEE4</string>
+											<string>3A574D0411510A2D00AEFEE4</string>
+											<string>3A574D0511510A2D00AEFEE4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -685,7 +689,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>3A574C74115100E600AEFEE4</string>
+		<string>3A574D0711510A2D00AEFEE4</string>
 		<string>3A574BA61150EE3E00AEFEE4</string>
 		<string>3A574BA01150EE1E00AEFEE4</string>
 		<string>/Users/aspeed/Projects/InternalProject/wherewasi/wherewasi.xcodeproj</string>

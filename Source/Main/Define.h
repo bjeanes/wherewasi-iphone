@@ -5,7 +5,7 @@
 #define WHEREWASIURL(base, path) [NSString stringWithFormat:@"%@%@", base, path]
 // Login
 #define LOGIN_PATH @"/account/api_token"
-#define POINTS_PATH @"/points"
+#define POINTS_PATH @"/points.json"
 
 
 // User defaults

@@ -36,6 +36,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LocationPointsServices)
 	[dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
 	[dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'.000Z'"];
 	[request setPostValue:[dateFormatter stringFromDate:[NSDate date]] forKey:@"point[occurred_at]"];
+	[request setData:UIImageJPEGRepresentation([UIImage imageNamed:@"stpatricksday10-hp.gif"], 1.0) 
+		withFileName:@"google.jpeg" 
+	  andContentType:@"image/jpeg"
+			  forKey:@"point[picture]"];
 	// Not required
 	[request setPostValue: @"Hello from anthony" forKey:@"point[message]"];
 	[self.networkQueue addOperation:request];

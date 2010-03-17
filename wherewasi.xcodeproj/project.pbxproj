@@ -19,6 +19,7 @@
 		3A574C121150F82F00AEFEE4 /* _LocationPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574C0F1150F82F00AEFEE4 /* _LocationPoint.m */; };
 		3A574C131150F82F00AEFEE4 /* LocationPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574C111150F82F00AEFEE4 /* LocationPoint.m */; };
 		3A574C211150F92600AEFEE4 /* LocationPointsServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574C201150F92600AEFEE4 /* LocationPointsServices.m */; };
+		3A574CD41151054E00AEFEE4 /* stpatricksday10-hp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3A574CD31151054E00AEFEE4 /* stpatricksday10-hp.gif */; };
 		3AB03AC711040F7D0027883A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB03ABA11040F7D0027883A /* MainWindow.xib */; };
 		3AB03ACB11040F7D0027883A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB03AC311040F7D0027883A /* AppDelegate.m */; };
 		3AB03ADD110410E10027883A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB03ADB110410E10027883A /* main.m */; };
@@ -66,6 +67,7 @@
 		3A574C111150F82F00AEFEE4 /* LocationPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPoint.m; sourceTree = "<group>"; };
 		3A574C1F1150F92600AEFEE4 /* LocationPointsServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationPointsServices.h; sourceTree = "<group>"; };
 		3A574C201150F92600AEFEE4 /* LocationPointsServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPointsServices.m; sourceTree = "<group>"; };
+		3A574CD31151054E00AEFEE4 /* stpatricksday10-hp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "stpatricksday10-hp.gif"; sourceTree = "<group>"; };
 		3AB03ABA11040F7D0027883A /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		3AB03ABB11040F7D0027883A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AB03ABC11040F7D0027883A /* Database.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		3AB03AB911040F7D0027883A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3A574CD31151054E00AEFEE4 /* stpatricksday10-hp.gif */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AB03AC711040F7D0027883A /* MainWindow.xib in Resources */,
+				3A574CD41151054E00AEFEE4 /* stpatricksday10-hp.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
