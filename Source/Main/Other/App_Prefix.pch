@@ -13,6 +13,7 @@
 	#import "MyLocationGetter.h"
 	#import "Define.h"
 	#import "LocationPoint.h"
+	#import "CellObject.h"
 	#import "AppDelegate.h"
 	#import "LoginServices.h"
 	#import "LocationPointsServices.h"

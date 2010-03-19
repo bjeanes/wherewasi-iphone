@@ -30,13 +30,14 @@
 	
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:LandingCellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:LandingCellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:LandingCellIdentifier] autorelease];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 	
-	NSString *category = [self objectForIndexPath:indexPath forTableView:tableView];
+	CellObject *cellObject = (CellObject *)[self objectForIndexPath:indexPath forTableView:tableView];
 	
-	cell.textLabel.text = category;
+	cell.textLabel.text = cellObject.label1;
+	cell.detailTextLabel.text = cellObject.label2;
 	
     return cell;
 }

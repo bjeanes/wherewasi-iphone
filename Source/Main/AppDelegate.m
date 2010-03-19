@@ -18,6 +18,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppDelegate)
 	[self.window addSubview:[self.navigationController view]];
     [self.window makeKeyAndVisible];
 	
+	[self.locationGetter startUpdates];
+	
 	if (self.locationGetter.locationManager.locationServicesEnabled) {
 		// Try to see when location getter got a fix
 		[[NSNotificationCenter defaultCenter] addObserver:self 
@@ -30,9 +32,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppDelegate)
 													 name:ShouldStopGPSLocationFix
 												   object:nil];
 	}
-	
-//	DLog(@"%@", [[LoginServices sharedLoginServices]apiToken]);
-//	[[LocationPointsServices sharedLocationPointsServices]postLocationPoint:nil];
 }
 
 /**
@@ -193,6 +192,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppDelegate)
 #pragma mark Memory management
 
 - (void)dealloc {
+	
+	[[NSNotificationCenter defaultCenter]removeObserver:self];
 	
     [_locationGetter release];
 	

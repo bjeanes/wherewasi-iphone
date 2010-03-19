@@ -10,7 +10,11 @@
 #import <OD2/OD2TableViewController.h>
 
 @interface LandingViewController : OD2TableViewController {
-
+	double _accuracy;
 }
+
+@property (nonatomic) double accuracy;
+
+- (void)refreshContent:(id)sender;
 
 @end

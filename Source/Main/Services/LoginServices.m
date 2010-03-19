@@ -23,6 +23,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LoginServices)
 	} else {
 		// Get the key from the prefs
 		apiToken = [[NSUserDefaults standardUserDefaults]valueForKey:APITokenUserDefaults];
+		if (!apiToken) {
+			// force a refresh if empty for whatever reason (should not unless first fetch failed)
+			[self downloadContentForUrl:url withObject:nil];
+		}
 	}
 	
 	return apiToken;

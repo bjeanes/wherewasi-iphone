@@ -14,6 +14,8 @@
 #pragma mark -
 #pragma mark Initialisation
 
+@synthesize accuracy=_accuracy;
+
 - (void)setupCustomInitialisation
 {
 	[super setupCustomInitialisation];
@@ -29,6 +31,27 @@
     [super viewDidLoad];
 	
 	self.title = @"Choose action";
+	
+	self.accuracy = 0.0;
+	
+	if ([AppDelegate sharedAppDelegate].locationGetter.locationManager.locationServicesEnabled) {
+		// Try to see when location getter got a fix
+		[[NSNotificationCenter defaultCenter] addObserver:self 
+												 selector:@selector(locationDidFix:) 
+													 name:GPSLocationDidFix
+												   object:nil];
+	}
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self 
+											 selector:@selector(refreshContent:) 
+												 name:LoginShouldReloadContentNotification
+											   object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self 
+											 selector:@selector(refreshContent:) 
+												 name:DidPostLocationPoint
+											   object:nil];
+	
 }
 
 #pragma mark -
@@ -59,15 +82,36 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	NSString *category = [self.dataSource objectForIndexPath:indexPath forTableView:tableView];
+	CellObject *object = (CellObject *)[self.dataSource objectForIndexPath:indexPath forTableView:tableView];
 	
-	if ([category isEqualToString:@"Create Point"]) {
+	if ([object.label1 isEqualToString:@"Generate Token"]) {
+		[[LoginServices sharedLoginServices]apiToken];
+	} else if ([object.label1 isEqualToString:@"Create Point"]) {
 		
+	} else if ([object.label1 isEqualToString:@"Sync"]) {
+		NSArray *points = [LocationPointsServices sharedLocationPointsServices].uncachedLocationPoints;
+		[[LocationPointsServices sharedLocationPointsServices]postLocationPoints:points];
 	}
+	
 	[tableView deselectRowAtIndexPath:indexPath animated:TRUE];
 }
 
+- (void)locationDidFix:(id)sender
+{
+	if ([AppDelegate sharedAppDelegate].currentLocation.horizontalAccuracy != self.accuracy) {
+		[self refreshContent:sender];
+	}
+}
+
+- (void)refreshContent:(id)sender
+{
+	[self.dataSource resetContent];
+	[self.tableView reloadData];
+}
+
 - (void)dealloc {
+	
+	[[NSNotificationCenter defaultCenter]removeObserver:self];
 	
     [super dealloc];
 }

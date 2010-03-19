@@ -18,6 +18,6 @@
 @property (nonatomic, readonly) NSArray *uncachedLocationPoints;
 
 - (void)postLocationPoint:(LocationPoint *)locationPoint;
-- (void)postAllUncachedLocationPoint:(NSArray *)locationPoints;
+- (void)postLocationPoints:(NSArray *)locationPoints;
 
 @end

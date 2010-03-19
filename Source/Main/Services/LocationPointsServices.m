@@ -13,6 +13,12 @@
 
 SYNTHESIZE_SINGLETON_FOR_CLASS(LocationPointsServices)
 
+- (NSManagedObjectContext *)managedObjectContext
+{
+	// override
+	return [AppDelegate sharedAppDelegate].managedObjectContext;
+}
+
 - (NSArray *)uncachedLocationPoints
 {
 	NSArray *cachedLocationPoints = [LocationPoint fetchManyLocationPointsWithMocCached:self.managedObjectContext 
@@ -70,7 +76,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LocationPointsServices)
 	[[UIApplication sharedApplication]setNetworkActivityIndicatorVisible:TRUE];
 }
 
-- (void)postAllUncachedLocationPoint:(NSArray *)locationPoints
+- (void)postLocationPoints:(NSArray *)locationPoints
 {
 	for (LocationPoint *point in locationPoints) {
 		[self postLocationPoint:point];

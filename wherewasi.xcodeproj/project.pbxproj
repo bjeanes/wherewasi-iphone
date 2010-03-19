@@ -16,6 +16,7 @@
 		3A1171F41153B06800DD192A /* LandingServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1171F31153B06800DD192A /* LandingServices.m */; };
 		3A1171F71153B07200DD192A /* LandingDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1171F61153B07200DD192A /* LandingDatasource.m */; };
 		3A1171F91153B08000DD192A /* LandingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1171F81153B08000DD192A /* LandingView.xib */; };
+		3A1172401153B54900DD192A /* CellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A11723F1153B54900DD192A /* CellObject.m */; };
 		3A5749771150CB2900AEFEE4 /* libObjectiveDump2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5749741150CB1900AEFEE4 /* libObjectiveDump2.a */; };
 		3A5749FD1150CEC000AEFEE4 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */; };
 		3A574A771150D4B100AEFEE4 /* MyLocationGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */; };
@@ -70,6 +71,8 @@
 		3A1171F51153B07200DD192A /* LandingDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingDatasource.h; sourceTree = "<group>"; };
 		3A1171F61153B07200DD192A /* LandingDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingDatasource.m; sourceTree = "<group>"; };
 		3A1171F81153B08000DD192A /* LandingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingView.xib; sourceTree = "<group>"; };
+		3A11723E1153B54900DD192A /* CellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellObject.h; sourceTree = "<group>"; };
+		3A11723F1153B54900DD192A /* CellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellObject.m; sourceTree = "<group>"; };
 		3A57496C1150CB1900AEFEE4 /* ObjectiveDump2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveDump2.xcodeproj; path = ObjectiveDump2/ObjectiveDump2.xcodeproj; sourceTree = "<group>"; };
 		3A574A751150D4B100AEFEE4 /* MyLocationGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationGetter.h; sourceTree = "<group>"; };
 		3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationGetter.m; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 			children = (
 				3A574A751150D4B100AEFEE4 /* MyLocationGetter.h */,
 				3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */,
+				3A11723E1153B54900DD192A /* CellObject.h */,
+				3A11723F1153B54900DD192A /* CellObject.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 				3A1171EE1153AFF600DD192A /* LandingViewController.m in Sources */,
 				3A1171F41153B06800DD192A /* LandingServices.m in Sources */,
 				3A1171F71153B07200DD192A /* LandingDatasource.m in Sources */,
+				3A1172401153B54900DD192A /* CellObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
