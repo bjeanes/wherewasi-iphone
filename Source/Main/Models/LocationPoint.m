@@ -9,7 +9,7 @@
 		return nil;
 	}
 	
-	LocationPoint *locationPoint = [LocationPoint fetchOnePointWithMocId:context serverId:serverId];
+	LocationPoint *locationPoint = [LocationPoint fetchOneLocationPointWithMocId:context serverId:serverId];
 	return locationPoint;
 }
 

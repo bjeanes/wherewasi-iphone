@@ -11,6 +11,11 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28860BE50F44EE6400985440 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28860BE40F44EE6400985440 /* CoreData.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		3A1171E91153AFD400DD192A /* LocationPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1171E81153AFD400DD192A /* LocationPointsViewController.m */; };
+		3A1171EE1153AFF600DD192A /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1171ED1153AFF600DD192A /* LandingViewController.m */; };
+		3A1171F41153B06800DD192A /* LandingServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1171F31153B06800DD192A /* LandingServices.m */; };
+		3A1171F71153B07200DD192A /* LandingDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1171F61153B07200DD192A /* LandingDatasource.m */; };
+		3A1171F91153B08000DD192A /* LandingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1171F81153B08000DD192A /* LandingView.xib */; };
 		3A5749771150CB2900AEFEE4 /* libObjectiveDump2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5749741150CB1900AEFEE4 /* libObjectiveDump2.a */; };
 		3A5749FD1150CEC000AEFEE4 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */; };
 		3A574A771150D4B100AEFEE4 /* MyLocationGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */; };
@@ -55,6 +60,16 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28860BE40F44EE6400985440 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A1171B91153A81D00DD192A /* Database02.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database02.xcdatamodel; sourceTree = "<group>"; };
+		3A1171E71153AFD400DD192A /* LocationPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationPointsViewController.h; sourceTree = "<group>"; };
+		3A1171E81153AFD400DD192A /* LocationPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPointsViewController.m; sourceTree = "<group>"; };
+		3A1171EC1153AFF600DD192A /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		3A1171ED1153AFF600DD192A /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		3A1171F21153B06800DD192A /* LandingServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingServices.h; sourceTree = "<group>"; };
+		3A1171F31153B06800DD192A /* LandingServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingServices.m; sourceTree = "<group>"; };
+		3A1171F51153B07200DD192A /* LandingDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingDatasource.h; sourceTree = "<group>"; };
+		3A1171F61153B07200DD192A /* LandingDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingDatasource.m; sourceTree = "<group>"; };
+		3A1171F81153B08000DD192A /* LandingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingView.xib; sourceTree = "<group>"; };
 		3A57496C1150CB1900AEFEE4 /* ObjectiveDump2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveDump2.xcodeproj; path = ObjectiveDump2/ObjectiveDump2.xcodeproj; sourceTree = "<group>"; };
 		3A574A751150D4B100AEFEE4 /* MyLocationGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationGetter.h; sourceTree = "<group>"; };
 		3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationGetter.m; sourceTree = "<group>"; };
@@ -70,7 +85,7 @@
 		3A574CD31151054E00AEFEE4 /* stpatricksday10-hp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "stpatricksday10-hp.gif"; sourceTree = "<group>"; };
 		3AB03ABA11040F7D0027883A /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		3AB03ABB11040F7D0027883A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AB03ABC11040F7D0027883A /* Database.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		3AB03ABC11040F7D0027883A /* Database01.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Database01.xcdatamodel; sourceTree = "<group>"; };
 		3AB03AC211040F7D0027883A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3AB03AC311040F7D0027883A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3AB03ADB110410E10027883A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,6 +162,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A1171E61153AFAA00DD192A /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				3A1171F21153B06800DD192A /* LandingServices.h */,
+				3A1171F31153B06800DD192A /* LandingServices.m */,
+				3A1171F51153B07200DD192A /* LandingDatasource.h */,
+				3A1171F61153B07200DD192A /* LandingDatasource.m */,
+			);
+			name = Landing;
+			sourceTree = "<group>";
+		};
+		3A1171EA1153AFD800DD192A /* LocationPoints */ = {
+			isa = PBXGroup;
+			children = (
+				3A1171E71153AFD400DD192A /* LocationPointsViewController.h */,
+				3A1171E81153AFD400DD192A /* LocationPointsViewController.m */,
+			);
+			name = LocationPoints;
+			sourceTree = "<group>";
+		};
+		3A1171EB1153AFE400DD192A /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				3A1171EC1153AFF600DD192A /* LandingViewController.h */,
+				3A1171ED1153AFF600DD192A /* LandingViewController.m */,
+			);
+			name = Landing;
+			sourceTree = "<group>";
+		};
 		3A57496D1150CB1900AEFEE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +240,7 @@
 			children = (
 				3AB03AB911040F7D0027883A /* Images */,
 				3AB03ABA11040F7D0027883A /* MainWindow.xib */,
+				3A1171F81153B08000DD192A /* LandingView.xib */,
 				3AB03ABB11040F7D0027883A /* Info.plist */,
 				3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */,
 			);
@@ -257,6 +302,7 @@
 			children = (
 				3A574AC41150D70B00AEFEE4 /* Login */,
 				3A574BFF1150F5C300AEFEE4 /* LocationPoints */,
+				3A1171E61153AFAA00DD192A /* Landing */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -264,6 +310,8 @@
 		3AB03AC611040F7D0027883A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3A1171EB1153AFE400DD192A /* Landing */,
+				3A1171EA1153AFD800DD192A /* LocationPoints */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -348,6 +396,7 @@
 			files = (
 				3AB03AC711040F7D0027883A /* MainWindow.xib in Resources */,
 				3A574CD41151054E00AEFEE4 /* stpatricksday10-hp.gif in Resources */,
+				3A1171F91153B08000DD192A /* LandingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +415,10 @@
 				3A574C121150F82F00AEFEE4 /* _LocationPoint.m in Sources */,
 				3A574C131150F82F00AEFEE4 /* LocationPoint.m in Sources */,
 				3A574C211150F92600AEFEE4 /* LocationPointsServices.m in Sources */,
+				3A1171E91153AFD400DD192A /* LocationPointsViewController.m in Sources */,
+				3A1171EE1153AFF600DD192A /* LandingViewController.m in Sources */,
+				3A1171F41153B06800DD192A /* LandingServices.m in Sources */,
+				3A1171F71153B07200DD192A /* LandingDatasource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,9 +534,10 @@
 		3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3AB03ABC11040F7D0027883A /* Database.xcdatamodel */,
+				3AB03ABC11040F7D0027883A /* Database01.xcdatamodel */,
+				3A1171B91153A81D00DD192A /* Database02.xcdatamodel */,
 			);
-			currentVersion = 3AB03ABC11040F7D0027883A /* Database.xcdatamodel */;
+			currentVersion = 3A1171B91153A81D00DD192A /* Database02.xcdatamodel */;
 			path = Database.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

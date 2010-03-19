@@ -38,6 +38,38 @@
 
 
 
+@dynamic cached;
+
+
+
+- (BOOL)cachedValue {
+	NSNumber *result = [self cached];
+	return result ? [result boolValue] : 0;
+}
+
+- (void)setCachedValue:(BOOL)value_ {
+	[self setCached:[NSNumber numberWithBool:value_]];
+}
+
+
+
+
+
+
+@dynamic message;
+
+
+
+
+
+
+@dynamic picture;
+
+
+
+
+
+
 @dynamic longitude;
 
 
@@ -81,26 +113,12 @@
 
 
 
-@dynamic message;
 
 
 
-
-
-
-@dynamic picture;
-
-
-
-
-
-
-
-
-
-+ (id)fetchOnePointWithMocId:(NSManagedObjectContext*)moc_ serverId:(NSNumber*)serverId_ {
++ (id)fetchOneLocationPointWithMocId:(NSManagedObjectContext*)moc_ serverId:(NSNumber*)serverId_ {
 	NSError *error = nil;
-	id result = [self fetchOnePointWithMocId:moc_ serverId:serverId_ error:&error];
+	id result = [self fetchOneLocationPointWithMocId:moc_ serverId:serverId_ error:&error];
 	if (error) {
 #if TARGET_OS_IPHONE
 		NSLog(@"error: %@", error);
@@ -110,7 +128,7 @@
 	}
 	return result;
 }
-+ (id)fetchOnePointWithMocId:(NSManagedObjectContext*)moc_ serverId:(NSNumber*)serverId_ error:(NSError**)error_ {
++ (id)fetchOneLocationPointWithMocId:(NSManagedObjectContext*)moc_ serverId:(NSNumber*)serverId_ error:(NSError**)error_ {
 	NSError *error = nil;
 	
 	NSManagedObjectModel *model = [[moc_ persistentStoreCoordinator] managedObjectModel];
@@ -119,9 +137,9 @@
 														serverId_, @"serverId",
 														
 														nil];
-	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"onePointWithMocId"
+	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"oneLocationPointWithMocId"
 													 substitutionVariables:substitutionVariables];
-	NSAssert(fetchRequest, @"Can't find fetch request named \"onePointWithMocId\".");
+	NSAssert(fetchRequest, @"Can't find fetch request named \"oneLocationPointWithMocId\".");
 	
 	id result = nil;
 	NSArray *results = [moc_ executeFetchRequest:fetchRequest error:&error];
@@ -135,13 +153,45 @@
 				result = [results objectAtIndex:0];
 				break;
 			default:
-				NSLog(@"WARN fetch request onePointWithMocId: 0 or 1 objects expected, %u found (substitutionVariables:%@, results:%@)",
+				NSLog(@"WARN fetch request oneLocationPointWithMocId: 0 or 1 objects expected, %u found (substitutionVariables:%@, results:%@)",
 					[results count],
 					substitutionVariables,
 					results);
 		}
 	}
 	
+	if (error_) *error_ = error;
+	return result;
+}
+
+
+
++ (NSArray*)fetchManyLocationPointsWithMocCached:(NSManagedObjectContext*)moc_ cached:(NSNumber*)cached_ {
+	NSError *error = nil;
+	NSArray *result = [self fetchManyLocationPointsWithMocCached:moc_ cached:cached_ error:&error];
+	if (error) {
+#if TARGET_OS_IPHONE
+		NSLog(@"error: %@", error);
+#else
+		[NSApp presentError:error];
+#endif
+	}
+	return result;
+}
++ (NSArray*)fetchManyLocationPointsWithMocCached:(NSManagedObjectContext*)moc_ cached:(NSNumber*)cached_ error:(NSError**)error_ {
+	NSError *error = nil;
+	
+	NSManagedObjectModel *model = [[moc_ persistentStoreCoordinator] managedObjectModel];
+	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"manyLocationPointsWithMocCached"
+													 substitutionVariables:[NSDictionary dictionaryWithObjectsAndKeys:
+														
+														cached_, @"cached",
+														
+														nil]
+													 ];
+	NSAssert(fetchRequest, @"Can't find fetch request named \"manyLocationPointsWithMocCached\".");
+	
+	NSArray *result = [moc_ executeFetchRequest:fetchRequest error:&error];
 	if (error_) *error_ = error;
 	return result;
 }

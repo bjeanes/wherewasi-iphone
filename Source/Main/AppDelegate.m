@@ -31,8 +31,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppDelegate)
 												   object:nil];
 	}
 	
-	DLog(@"%@", [[LoginServices sharedLoginServices]apiToken]);
-	[[LocationPointsServices sharedLocationPointsServices]postLocationPoint:nil];
+//	DLog(@"%@", [[LoginServices sharedLoginServices]apiToken]);
+//	[[LocationPointsServices sharedLocationPointsServices]postLocationPoint:nil];
 }
 
 /**

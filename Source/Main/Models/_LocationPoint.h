@@ -24,6 +24,28 @@
 
 
 
+@property (nonatomic, retain) NSNumber *cached;
+
+@property BOOL cachedValue;
+- (BOOL)cachedValue;
+- (void)setCachedValue:(BOOL)value_;
+
+//- (BOOL)validateCached:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSString *message;
+
+//- (BOOL)validateMessage:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSString *picture;
+
+//- (BOOL)validatePicture:(id*)value_ error:(NSError**)error_;
+
+
+
 @property (nonatomic, retain) NSNumber *longitude;
 
 @property double longitudeValue;
@@ -50,22 +72,15 @@
 
 
 
-@property (nonatomic, retain) NSString *message;
-
-//- (BOOL)validateMessage:(id*)value_ error:(NSError**)error_;
 
 
-
-@property (nonatomic, retain) NSString *picture;
-
-//- (BOOL)validatePicture:(id*)value_ error:(NSError**)error_;
++ (id)fetchOneLocationPointWithMocId:(NSManagedObjectContext*)moc_ serverId:(NSNumber*)serverId_ ;
++ (id)fetchOneLocationPointWithMocId:(NSManagedObjectContext*)moc_ serverId:(NSNumber*)serverId_ error:(NSError**)error_;
 
 
 
-
-
-+ (id)fetchOnePointWithMocId:(NSManagedObjectContext*)moc_ serverId:(NSNumber*)serverId_ ;
-+ (id)fetchOnePointWithMocId:(NSManagedObjectContext*)moc_ serverId:(NSNumber*)serverId_ error:(NSError**)error_;
++ (NSArray*)fetchManyLocationPointsWithMocCached:(NSManagedObjectContext*)moc_ cached:(NSNumber*)cached_ ;
++ (NSArray*)fetchManyLocationPointsWithMocCached:(NSManagedObjectContext*)moc_ cached:(NSNumber*)cached_ error:(NSError**)error_;
 
 
 @end
