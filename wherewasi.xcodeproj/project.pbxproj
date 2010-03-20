@@ -18,6 +18,7 @@
 		3A1171F91153B08000DD192A /* LandingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1171F81153B08000DD192A /* LandingView.xib */; };
 		3A1172401153B54900DD192A /* CellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A11723F1153B54900DD192A /* CellObject.m */; };
 		3A1173631154C9A500DD192A /* LocationPointsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1173621154C9A500DD192A /* LocationPointsView.xib */; };
+		3A1173D51154E45D00DD192A /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A1173D41154E45D00DD192A /* Entitlements.plist */; };
 		3A5749771150CB2900AEFEE4 /* libObjectiveDump2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5749741150CB1900AEFEE4 /* libObjectiveDump2.a */; };
 		3A5749FD1150CEC000AEFEE4 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */; };
 		3A574A771150D4B100AEFEE4 /* MyLocationGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */; };
@@ -75,6 +76,7 @@
 		3A11723E1153B54900DD192A /* CellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellObject.h; sourceTree = "<group>"; };
 		3A11723F1153B54900DD192A /* CellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellObject.m; sourceTree = "<group>"; };
 		3A1173621154C9A500DD192A /* LocationPointsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationPointsView.xib; sourceTree = "<group>"; };
+		3A1173D41154E45D00DD192A /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		3A57496C1150CB1900AEFEE4 /* ObjectiveDump2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveDump2.xcodeproj; path = ObjectiveDump2/ObjectiveDump2.xcodeproj; sourceTree = "<group>"; };
 		3A574A751150D4B100AEFEE4 /* MyLocationGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationGetter.h; sourceTree = "<group>"; };
 		3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationGetter.m; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				3AB03ABA11040F7D0027883A /* MainWindow.xib */,
 				3A1171F81153B08000DD192A /* LandingView.xib */,
 				3AB03ABB11040F7D0027883A /* Info.plist */,
+				3A1173D41154E45D00DD192A /* Entitlements.plist */,
 				3A1173621154C9A500DD192A /* LocationPointsView.xib */,
 				3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */,
 			);
@@ -406,6 +409,7 @@
 				3A574CD41151054E00AEFEE4 /* stpatricksday10-hp.gif in Resources */,
 				3A1171F91153B08000DD192A /* LandingView.xib in Resources */,
 				3A1173631154C9A500DD192A /* LocationPointsView.xib in Resources */,
+				3A1173D51154E45D00DD192A /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +475,44 @@
 			};
 			name = Release;
 		};
+		3A1173F91154E4C500DD192A /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/Resources/Entitlements.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Anthony Mittaz";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Source/External/ObjectiveDump2/Source/Main",
+					"$(SRCROOT)/Source/External/ObjectiveDump2/Source/External/asihttprequest/Classes",
+					"$(SRCROOT)/Source/External/ObjectiveDump2/Source/External/Gallager",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F3AB5BAC-45B9-4B96-9190-760566FDD032";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Adhoc;
+		};
+		3A1173FA1154E4C500DD192A /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Source/Main/Other/App_Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				OTHER_CFLAGS = "-DDEBUG";
+				PRODUCT_NAME = wherewasi;
+			};
+			name = Adhoc;
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -525,6 +567,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				3A1173FA1154E4C500DD192A /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -534,6 +577,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				3A1173F91154E4C500DD192A /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
