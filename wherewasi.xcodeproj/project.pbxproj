@@ -312,8 +312,8 @@
 			isa = PBXGroup;
 			children = (
 				3A574AC41150D70B00AEFEE4 /* Login */,
-				3A574BFF1150F5C300AEFEE4 /* LocationPoints */,
 				3A1171E61153AFAA00DD192A /* Landing */,
+				3A574BFF1150F5C300AEFEE4 /* LocationPoints */,
 			);
 			path = Services;
 			sourceTree = "<group>";

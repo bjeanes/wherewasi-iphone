@@ -47,7 +47,7 @@
 						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{20, 15}, {280, 146}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<object class="NSColor" key="IBUIBackgroundColor">
+						<object class="NSColor" key="IBUIBackgroundColor" id="692242143">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
 						</object>
@@ -70,6 +70,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{45, 204}, {92, 81}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<reference key="IBUIBackgroundColor" ref="692242143"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>

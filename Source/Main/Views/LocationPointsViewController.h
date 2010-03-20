@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <OD2/OD2ViewController.h>
 
-@interface LocationPointsViewController : OD2ViewController <UIImagePickerControllerDelegate, UITextViewDelegate>{
+@interface LocationPointsViewController : OD2ViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextViewDelegate> {
 	double _accuracy;
 	
 	UITextView *_messageTextView;

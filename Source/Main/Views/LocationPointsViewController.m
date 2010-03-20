@@ -117,7 +117,38 @@
 
 - (IBAction)pickImage:(id)sender
 {
-	
+	UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+	imagePicker.delegate = self;
+	[self presentModalViewController:imagePicker animated:YES];
+	[imagePicker release];
+}
+
+#pragma mark -
+#pragma mark UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+	[self dismissModalViewControllerAnimated:YES];
+	UIImage *image = [info valueForKey:@"UIImagePickerControllerOriginalImage"];
+	NSString *imageURL = nil;
+	if (image) {
+		self.pictureImageView.image = image;
+		NSString *imagePath = nil;
+		// Save the image
+		NSData *imageData = UIImageJPEGRepresentation(image, 1.0);
+		// save the image somewhere
+		//Build the path we want the file to be at 
+		imageURL = [[AppDelegate sharedAppDelegate] applicationDocumentsDirectory];
+		NSString *guid = [[NSProcessInfo processInfo] globallyUniqueString]; 
+		imagePath = [NSString stringWithFormat:@"%@.jpeg", guid];
+		imageURL = [imageURL stringByAppendingPathComponent:imagePath];
+		[imageData writeToFile:imageURL atomically:FALSE];
+	}
+	self.object = imageURL;
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+	[self dismissModalViewControllerAnimated:YES];
 }
 
 - (IBAction)save:(id)sender
@@ -129,8 +160,10 @@
 	point.latitudeValue = currentLocation.coordinate.latitude;
 	point.longitudeValue =currentLocation.coordinate.longitude ;
 	point.message = self.messageTextView.text;
-	if (self.pictureImageView.image) {
+	if (self.object) {
 		// do something
+		NSString *picturePath = (NSString *)self.object;
+		point.picture = picturePath;
 	}
 	
 	[self.managedObjectContext save:nil];

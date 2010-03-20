@@ -60,10 +60,15 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LocationPointsServices)
 	// Not required
 	if (locationPoint.picture && locationPoint.picture.length > 0) {
 		// only if an image is given
-		[request setData:UIImageJPEGRepresentation([UIImage imageNamed:@"stpatricksday10-hp.gif"], 1.0) 
-			withFileName:@"google.jpeg" 
-		  andContentType:@"image/jpeg"
-				  forKey:@"point[picture]"];
+//		[request setData:UIImageJPEGRepresentation([UIImage imageNamed:@"stpatricksday10-hp.gif"], 1.0) 
+//			withFileName:@"google.jpeg" 
+//		  andContentType:@"image/jpeg"
+//				  forKey:@"point[picture]"];
+		[request setFile:locationPoint.picture 
+			withFileName:@"picture.jpeg" 
+		  andContentType:@"image/jpeg" 
+				  forKey:@"point[picture"];
+		[request setShouldStreamPostDataFromDisk:YES];
 	}
 	if (locationPoint.message && locationPoint.message.length > 0) {
 		[request setPostValue:locationPoint.message forKey:@"point[message]"];
