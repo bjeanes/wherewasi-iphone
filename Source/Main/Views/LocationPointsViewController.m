@@ -41,6 +41,8 @@
 	layer.borderWidth = 1.0;
 	[self.messageTextView becomeFirstResponder];
 	
+	[self refreshContent:self];
+	
 	self.accuracy = 0.0;
 	
 	if ([AppDelegate sharedAppDelegate].locationGetter.locationManager.locationServicesEnabled) {
@@ -79,7 +81,16 @@
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
-	
+	// Any new character added is passed in as the "text" parameter
+    if ([text isEqualToString:@"\n"]) {
+        // Be sure to test for equality using the "isEqualToString" message
+        [textView resignFirstResponder];
+		
+        // Return FALSE so that the final '\n' character doesn't get added
+        return FALSE;
+    }
+    // For any other character return TRUE so that the text gets added to the view
+    return TRUE;
 }
 
 - (void)locationDidFix:(id)sender
@@ -94,7 +105,7 @@
 	CLLocation *currentLocation = [AppDelegate sharedAppDelegate].currentLocation;
 	CLLocationAccuracy accuracy = currentLocation.horizontalAccuracy;
 	
-	self.coordinateLabel.text = [NSString stringWithFormat:@"%.1f, %.1f", 
+	self.coordinateLabel.text = [NSString stringWithFormat:@"%f, %f", 
 								 currentLocation.coordinate.latitude, 
 								 currentLocation.coordinate.longitude];
 	self.accuracyLabel.text = [NSString stringWithFormat:@"%.1fm accuracy", accuracy];
