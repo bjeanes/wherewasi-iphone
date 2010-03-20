@@ -8,6 +8,7 @@
 
 #import "LandingViewController.h"
 #import "LandingDatasource.h"
+#import "LocationPointsViewController.h"
 
 @implementation LandingViewController
 
@@ -87,7 +88,10 @@
 	if ([object.label1 isEqualToString:@"Generate Token"]) {
 		[[LoginServices sharedLoginServices]apiToken];
 	} else if ([object.label1 isEqualToString:@"Create Point"]) {
-		
+		LocationPointsViewController *controller = [[[LocationPointsViewController alloc]initWithNibName:@"LocationPointsView" 
+																								  bundle:nil]autorelease];
+		UINavigationController *navController = [[[UINavigationController alloc]initWithRootViewController:controller]autorelease];
+		[self.navigationController presentModalViewController:navController animated:TRUE];
 	} else if ([object.label1 isEqualToString:@"Sync"]) {
 		NSArray *points = [LocationPointsServices sharedLocationPointsServices].uncachedLocationPoints;
 		[[LocationPointsServices sharedLocationPointsServices]postLocationPoints:points];

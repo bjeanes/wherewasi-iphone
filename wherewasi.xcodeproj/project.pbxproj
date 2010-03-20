@@ -17,6 +17,7 @@
 		3A1171F71153B07200DD192A /* LandingDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1171F61153B07200DD192A /* LandingDatasource.m */; };
 		3A1171F91153B08000DD192A /* LandingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1171F81153B08000DD192A /* LandingView.xib */; };
 		3A1172401153B54900DD192A /* CellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A11723F1153B54900DD192A /* CellObject.m */; };
+		3A1173631154C9A500DD192A /* LocationPointsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1173621154C9A500DD192A /* LocationPointsView.xib */; };
 		3A5749771150CB2900AEFEE4 /* libObjectiveDump2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5749741150CB1900AEFEE4 /* libObjectiveDump2.a */; };
 		3A5749FD1150CEC000AEFEE4 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */; };
 		3A574A771150D4B100AEFEE4 /* MyLocationGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */; };
@@ -73,6 +74,7 @@
 		3A1171F81153B08000DD192A /* LandingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingView.xib; sourceTree = "<group>"; };
 		3A11723E1153B54900DD192A /* CellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellObject.h; sourceTree = "<group>"; };
 		3A11723F1153B54900DD192A /* CellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellObject.m; sourceTree = "<group>"; };
+		3A1173621154C9A500DD192A /* LocationPointsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationPointsView.xib; sourceTree = "<group>"; };
 		3A57496C1150CB1900AEFEE4 /* ObjectiveDump2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveDump2.xcodeproj; path = ObjectiveDump2/ObjectiveDump2.xcodeproj; sourceTree = "<group>"; };
 		3A574A751150D4B100AEFEE4 /* MyLocationGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationGetter.h; sourceTree = "<group>"; };
 		3A574A761150D4B100AEFEE4 /* MyLocationGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationGetter.m; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				3AB03ABA11040F7D0027883A /* MainWindow.xib */,
 				3A1171F81153B08000DD192A /* LandingView.xib */,
 				3AB03ABB11040F7D0027883A /* Info.plist */,
+				3A1173621154C9A500DD192A /* LocationPointsView.xib */,
 				3A5749FC1150CEC000AEFEE4 /* Database.xcdatamodeld */,
 			);
 			path = Resources;
@@ -402,6 +405,7 @@
 				3AB03AC711040F7D0027883A /* MainWindow.xib in Resources */,
 				3A574CD41151054E00AEFEE4 /* stpatricksday10-hp.gif in Resources */,
 				3A1171F91153B08000DD192A /* LandingView.xib in Resources */,
+				3A1173631154C9A500DD192A /* LocationPointsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
