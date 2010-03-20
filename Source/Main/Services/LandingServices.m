@@ -25,13 +25,20 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LandingServices)
 	NSInteger notSyncedPoints = [[LocationPointsServices sharedLocationPointsServices]uncachedLocationPoints].count;
 	CLLocationAccuracy accuracy = [AppDelegate sharedAppDelegate].currentLocation.horizontalAccuracy;
 	
+	NSArray *topGroup = [NSArray arrayWithObjects:
+						 [CellObject cellObjectWithLabel1:@"Create Point" 
+												   label2:[NSString stringWithFormat:@"%.1fm accuracy", accuracy]], 
+						 [CellObject cellObjectWithLabel1:@"Sync" 
+												   label2:(notSyncedPoints > 0) ? [NSString stringWithFormat:@"%d to sync", notSyncedPoints] : @"none"],
+						 nil];
+	NSArray *bottomGroup = [NSArray arrayWithObjects:
+							[CellObject cellObjectWithLabel1:@"Generate Token" 
+													  label2:(apiToken) ? @"installed" : @"missing"],
+							nil];
+	
 	return [NSArray arrayWithObjects:
-			[CellObject cellObjectWithLabel1:@"Generate Token" 
-									  label2:(apiToken) ? @"installed" : @"missing"],
-			[CellObject cellObjectWithLabel1:@"Create Point" 
-									  label2:[NSString stringWithFormat:@"%.1fm accuracy", accuracy]], 
-			[CellObject cellObjectWithLabel1:@"Sync" 
-									  label2:(notSyncedPoints > 0) ? [NSString stringWithFormat:@"%d to sync", notSyncedPoints] : @"none"],
+			topGroup,
+			bottomGroup,
 			nil];
 }
 
