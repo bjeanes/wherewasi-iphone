@@ -100,6 +100,12 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LocationPointsServices)
 		LocationPoint *point = [request.userInfo  valueForKey:@"object"];
 		point.cachedValue = TRUE;
 		[self.managedObjectContext save:NULL];
+		
+		NSFileManager *manager = [NSFileManager defaultManager];
+		if ([manager fileExistsAtPath:point.picture]) {
+			[manager removeItemAtPath:point.picture error:NULL];
+		}
+		
 		[[NSNotificationCenter defaultCenter] postNotificationName:DidPostLocationPoint object:self];
 	}
 	
