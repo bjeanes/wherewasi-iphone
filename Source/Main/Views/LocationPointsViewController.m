@@ -117,11 +117,65 @@
 
 - (IBAction)pickImage:(id)sender
 {
-	UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-	imagePicker.delegate = self;
-	[self presentModalViewController:imagePicker animated:YES];
-	[imagePicker release];
+	// Should check if source is available
+	
+	UIActionSheet *styleAlert =
+	[[UIActionSheet alloc] initWithTitle:nil
+								delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Remove Image"
+					   otherButtonTitles:@"Camera", @"Saved Photo Album", @"Photo Library", nil];
+	
+	[styleAlert showInView:self.view];
+	[styleAlert release];
 }
+
+// change the navigation bar style, also make the status bar match with it
+- (void)actionSheet:(UIActionSheet *)modalView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+	BOOL shouldCancel = FALSE;
+	switch (buttonIndex)
+	{
+		case 0:
+		{
+			// Remove image
+			shouldCancel = TRUE;
+			break;
+		}
+		case 1:
+		{
+			// Camera
+			sourceType = UIImagePickerControllerSourceTypeCamera;
+			break;
+		}
+		case 2:
+		{
+			// Photo Album
+			sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+			break;
+		}
+		case 3:
+		{
+			// Photo Library
+			sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+			break;
+		}
+		case 4:
+		{
+			// Cancel
+			shouldCancel = TRUE;
+			break;
+		}
+	}
+	
+	if (!shouldCancel) {
+		UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+		imagePicker.delegate = self;
+		imagePicker.sourceType = sourceType;
+		[self presentModalViewController:imagePicker animated:YES];
+		[imagePicker release];
+	}
+}
+
 
 #pragma mark -
 #pragma mark UIImagePickerControllerDelegate
