@@ -81,8 +81,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(AppDelegate)
 		if (TARGET_IPHONE_SIMULATOR) {
 			// harajuku
 			current = [[[CLLocation alloc]initWithLatitude:35.67165182 longitude:139.7016934]autorelease];
-			// tokyo city
-			// current = [[[CLLocation alloc]initWithLatitude:35.67500798914924 longitude:139.72867012023926]autorelease];
 		} else {
 			current = [self.locationGetter.locationManager location];
 		}

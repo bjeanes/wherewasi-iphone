@@ -41,6 +41,10 @@
 	layer.borderWidth = 1.0;
 	[self.messageTextView becomeFirstResponder];
 	
+	CALayer *imageLayer = self.pictureImageView.layer;
+	imageLayer.borderColor = [[UIColor blackColor]CGColor];
+	imageLayer.borderWidth = 1.0;
+	
 	[self refreshContent:self];
 	
 	self.accuracy = 0.0;
@@ -121,6 +125,7 @@
 	CLLocation *currentLocation = [AppDelegate sharedAppDelegate].currentLocation;
 	
 	LocationPoint *point = [LocationPoint insertInManagedObjectContext:self.managedObjectContext];
+	point.occurred_at = [NSDate date];
 	point.latitudeValue = currentLocation.coordinate.latitude;
 	point.longitudeValue =currentLocation.coordinate.longitude ;
 	point.message = self.messageTextView.text;

@@ -53,6 +53,11 @@
 												 name:DidPostLocationPoint
 											   object:nil];
 	
+	[[NSNotificationCenter defaultCenter] addObserver:self 
+											 selector:@selector(refreshContent:) 
+												 name:NSManagedObjectContextDidSaveNotification
+											   object:nil];
+	
 }
 
 #pragma mark -
